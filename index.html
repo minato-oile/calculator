@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+
+    <!-- 画面部分 -->
+    <div class="display">
+      <div class="display__expression" id="expression"></div>
+      <div class="display__result" id="result">0</div>
+    </div>
+
+    <!-- ボタン部分 -->
+    <div class="buttons">
+      <!-- 1行目 -->
+      <button class="btn btn--clear"   data-action="clear">AC</button>
+      <button class="btn btn--sign"    data-action="sign">+/-</button>
+      <button class="btn btn--percent" data-action="percent">%</button>
+      <button class="btn btn--operator" data-value="/">÷</button>
+
+      <!-- 2行目 -->
+      <button class="btn btn--number" data-value="7">7</button>
+      <button class="btn btn--number" data-value="8">8</button>
+      <button class="btn btn--number" data-value="9">9</button>
+      <button class="btn btn--operator" data-value="*">×</button>
+
+      <!-- 3行目 -->
+      <button class="btn btn--number" data-value="4">4</button>
+      <button class="btn btn--number" data-value="5">5</button>
+      <button class="btn btn--number" data-value="6">6</button>
+      <button class="btn btn--operator" data-value="-">−</button>
+
+      <!-- 4行目 -->
+      <button class="btn btn--number" data-value="1">1</button>
+      <button class="btn btn--number" data-value="2">2</button>
+      <button class="btn btn--number" data-value="3">3</button>
+      <button class="btn btn--operator" data-value="+">+</button>
+
+      <!-- 5行目 -->
+      <button class="btn btn--zero"   data-value="0">0</button>
+      <button class="btn btn--dot"    data-value=".">.</button>
+      <button class="btn btn--equal"  data-action="equal">=</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
